@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "A simple API server which lets you send messages to different services"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "fastapi[standard]>=0.116.1",
+]
