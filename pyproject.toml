@@ -7,3 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.116.1",
 ]
+# [project.optional-dependencies] #TODO: Figure out how to work with opt/extra depedencies
+# telegram = [
+#     "aiogram>=3.21.0"
+# ]
