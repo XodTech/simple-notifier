@@ -5,12 +5,12 @@ import importlib
 import os
 from fastapi import FastAPI
 
-ACTIVE_MODULES_DIR = "modules/active"
+ACTIVE_MODULES_DIR = os.path.join("modules", "active")
 
 app = FastAPI()
 
 for filename in os.listdir(ACTIVE_MODULES_DIR):
     if filename.endswith(".py"): #NOTE: Consider excluding __init__.py
-        MODULE_NAME = f"{ ACTIVE_MODULES_DIR.replace('/',".") }.{filename[:-3]}"
-        module = importlib.import_module(MODULE_NAME)
+        module_name = f"{ ACTIVE_MODULES_DIR.replace(os.sep,'.') }.{filename[:-3]}"
+        module = importlib.import_module(module_name)
         app.include_router(module.router)
