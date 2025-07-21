@@ -9,6 +9,7 @@
 # ]
 # ///
 
+from sys import argv
 import discord
 from discord.ext import commands
 
@@ -27,5 +28,9 @@ async def on_ready():
 @bot.command()
 async def id(ctx): #pylint: disable=redefined-builtin
     await ctx.reply(f"This channel ID is: `{str(ctx.channel.id)}`")
+
+
+if BOT_TOKEN == "":
+    BOT_TOKEN = argv[1]
 
 bot.run(BOT_TOKEN)
