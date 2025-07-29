@@ -6,7 +6,7 @@ from typing import Optional
 from fastapi import APIRouter
 import requests
 
-# Configuration for discord webhook
+# Configuration for Discord webhook
 WEBHOOK_URL = ""  # Provide the actual Discord webhook URL here
 
 router = APIRouter()

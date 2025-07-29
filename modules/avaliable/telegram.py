@@ -2,17 +2,15 @@
 #pylint: disable=import-error
 
 from fastapi import APIRouter
-#from aiogram import Bot
 import requests
 
-# Configuration for aiogram
+# Configuration for Telegram bot
 BOT_TOKEN = ""  # Telegram bot token (required for authentication)
 DESTINATION_ID = 0 # Replace it with your actual chat ID, group ID or channel ID
 
 # Message related configuration
 DEFAULT_MESSAGE = "Ping"  # Default message to send if no message is provided
 MESSAGE_FORMAT = "[msg]" # [msg] will be replaced with an actual message
-
 
 router = APIRouter()
 

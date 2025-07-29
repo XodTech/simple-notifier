@@ -5,12 +5,11 @@
 import requests
 from fastapi import APIRouter
 
-# Configuration for discord bot
+# Configuration for Discord bot
 BOT_TOKEN = ""  # Discord bot token (required for authentication)
 CHANNEL_ID = "" # Replace with your channel id
 
 router = APIRouter()
-
 
 def send_bot_message(msg: str) -> dict:
     url = f"https://discord.com/api/v10/channels/{CHANNEL_ID}/messages"
