@@ -1,7 +1,7 @@
 [project]
 name = "simple-notifier"
 version = "1.0"
-description = "Simple API server which lets you send messages to different services"
+description = "Modular notification API server which integrates to different services"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

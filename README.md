@@ -1,4 +1,4 @@
-# Simple Notifier - Simple API Server Which Lets You Send Messages To Different Services
+# Simple Notifier - Modular Notification API Server Which Integrates To Different Services
 
 ## Getting Started
 
