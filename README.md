@@ -40,6 +40,9 @@
 - With `uv`: `uv run fastapi run main.py`
 - With `pip`: `fastapi run main.py`
 
+The server will then be launched on port 8080
+Visit `http://IP:8080/docs` to see available endpoints an their arguments
+
 ### Persistant Deploy
 
 **Comming soon ...**
